@@ -56,9 +56,11 @@ function ActivationPage() {
       }
     };
 
-    if (activation_token) {
-      activateUser();
-    }
+   useEffect(() => {
+  if (activation_token) {
+    activateUser();
+  }
+}, [activation_token]);
   }, []);
 
   return (

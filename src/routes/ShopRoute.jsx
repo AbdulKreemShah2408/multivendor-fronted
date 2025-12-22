@@ -1,4 +1,4 @@
-import ShopHomePage from "../pages/shop/shopHomePage"
+import ShopHomePage from "../pages/shop/shopHomePage.jsx"
 import ShopCreateProduct from "../pages/shop/ShopCreateProduct"
 import ShopAllProducts from "../pages/shop/ShopAllProducts"
 import ShopCreateEvents from "../pages/shop/ShopCreateEvents"

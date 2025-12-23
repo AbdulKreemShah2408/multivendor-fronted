@@ -55,13 +55,9 @@ function ActivationPage() {
         setStatus("error");
       }
     };
-
-   useEffect(() => {
-  if (activation_token) {
-    activateUser();
-  }
-}, [activation_token]);
-  }, []);
+   activateUser();
+ 
+  }, [activation_token]);
 
   return (
     <div

@@ -11,7 +11,7 @@ import { format } from "timeago.js";
 
 
 // Is line ko code mein update karein
-const ENDPOINT = process.env.REACT_APP_SERVER_URL || "https://multivendor-socket-code-production.up.railway.app";
+const ENDPOINT = pimport.meta.env.VITE_APP_SERVER_URL || "https://multivendor-socket-code-production.up.railway.app";
 
 const DashboardMessages = () => {
   const { seller, isLoading } = useSelector((state) => state.seller);

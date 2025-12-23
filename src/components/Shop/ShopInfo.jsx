@@ -24,12 +24,19 @@ const ShopInfo = ({ isOwner }) => {
   })
   }, [])
   
-  const logoutHandler = async() => {
-    axios.get(`${server}/shop/logout`,{
-      withCredentials:true,
+  const logoutHandler = async () => {
+  try {
+    // 1. Backend ko request bhejein cookie delete karne ke liye
+    await axios.get(`${server}/shop/logout`, {
+      withCredentials: true,
     });
-    window.location.reload();
-  };
+
+    window.location.reload(true); 
+    
+  } catch (error) {
+    console.error("Logout Error:", error);
+  }
+};
   const totalReviewslength=products && products.reduce((acc,product)=>acc+product.reviews.length,0);
 const totalRatings=products && products.reduce((acc,product)=>acc+product.reviews.reduce((sum,review)=>sum +review.rating,0),0);
 const averageRating=totalRatings/totalReviewslength || 0;

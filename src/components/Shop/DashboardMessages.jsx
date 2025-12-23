@@ -35,7 +35,7 @@ const DashboardMessages = () => {
   const socketId = useRef(null);
 
   useEffect(() => {
-    socketId.current = socketIO(ENDPOINT, { transports: ["websocket"] });
+    socketId.current = socketIO(ENDPOINT, { transports: ["websocket", "polling"] });
 
     socketId.current.on("getMessage", (data) => {
       setArrivalMessage({

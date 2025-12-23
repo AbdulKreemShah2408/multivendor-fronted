@@ -11,7 +11,11 @@ import { format } from "timeago.js";
 
 
 // Is line ko code mein update karein
+// Isay replace karein
 const ENDPOINT = import.meta.env.VITE_APP_SERVER_URL || "https://multivendor-socket-code-production.up.railway.app";
+
+// Taake Git ko change nazar aaye, ek comment niche add kar dein
+console.log("Socket Connecting to:", ENDPOINT);
 
 const DashboardMessages = () => {
   const { seller, isLoading } = useSelector((state) => state.seller);

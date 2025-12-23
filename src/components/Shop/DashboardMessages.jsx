@@ -10,7 +10,8 @@ import socketIO from "socket.io-client";
 import { format } from "timeago.js";
 
 
-const ENDPOINT = "https://multivendor-socket-code-production.up.railway.app";
+// Is line ko code mein update karein
+const ENDPOINT = process.env.REACT_APP_SERVER_URL || "https://multivendor-socket-code-production.up.railway.app";
 
 const DashboardMessages = () => {
   const { seller, isLoading } = useSelector((state) => state.seller);

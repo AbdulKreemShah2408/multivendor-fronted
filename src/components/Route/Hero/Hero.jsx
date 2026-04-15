@@ -17,10 +17,7 @@ function Hero() {
         </h1>
 
         <p className="pt-5 text-[16px] font-poppins font-normal text-[#000000ba] max-w-[600px] leading-[1.8]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-          assumenda? Quisquam itaque exercitationem labore vel, dolore quidem
-          asperiores laudantium temporibus soluta optio consequatur aliquam
-          deserunt officia. Dolorum saepe nulla provident.
+         Discover our curated selection of premium home accessories and furniture. From minimalist designs to timeless classics, find everything you need to transform your house into a beautiful home.
         </p>
 
         <Link to="/products" className="inline-block">
